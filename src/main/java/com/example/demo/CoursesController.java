@@ -24,7 +24,7 @@ public class CoursesController {
 	@RequestMapping("courseso")
 	//@ResponseBody
 	public String courseso(@RequestParam("cname") String courseName, HttpSession session) {
-		//System.out.println("Welcome to course:"+ req.getAttribute("cname"));
+		System.out.println("Welcome to course:"+ courseName);
 		session.setAttribute("cname", courseName);
 		return "course";
 	}
